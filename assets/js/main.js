@@ -35,18 +35,25 @@ var currentlanguage = 'nl';
 var currentMessage = getCurrentTranslatedMessage(currentlanguage);
 
 function getCurrentTranslatedMessage(language) {
+    var message;
     switch (language) {
         case 'nl':
-            return 'Hello World NL';
+            message = 'Hello World NL';
+            break;
         case 'de':
-            return 'Hello World DE';
+            message = 'Hello World DE';
+            break;
         case 'ft':
-            return 'Hello World FR';
+            message = 'Hello World FR';
+            break;
         case 'ru':
-            return 'Hello World RU';
+            message = 'Hello World RU';
+            break;
         default:
-            return 'Hello World EN';
+            message = 'Hello World EN';
+            break;
     }
+    return message;
 }
 
 console.log('Write a switch statement to console log "Hello world" in 5 different languages');
